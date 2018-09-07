@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Support\Facades\Schema;
@@ -17,6 +18,12 @@ class CreatePasswordResetsTable extends Migration
             $table->string('email')->index();
             $table->string('token');
             $table->timestamp('created_at')->nullable();
+            $table->string('name',45);
+            $table->string('Lastname',45);
+            $table->string('document',45);
+            $table->integer('phone',11);
+            $table->string('dress',45);
+            $table->timestamp('');
         });
     }
 
